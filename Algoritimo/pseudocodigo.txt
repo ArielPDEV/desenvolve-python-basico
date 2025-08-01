@@ -1,0 +1,6 @@
+1- Início
+2- Leia n
+3- a = n - 1 * 10
+4- b = 10 - n
+5- z = a + b
+6- Imprima z

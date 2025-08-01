@@ -1,0 +1,9 @@
+1 - Leia e armazene a entrada de dados
+2 - Subtraia 1 da entrada
+3 - Multiplique por 10
+4 - Armazene o primeiro valor como "a"
+5 - Subtraia de 10 o valor da entrada
+6 - Armazene o segundo valor como "b"
+7 - Some "a" e "b"
+8 - Armazene o valor obtido como "z"
+9 - Exiba a mensagem "9 x n = z"
