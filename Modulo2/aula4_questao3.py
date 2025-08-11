@@ -1,0 +1,11 @@
+nome1 = input("Qual o nome do primeiro produto?: ")
+preço1 = float(input("Qual o preço de cada unidade do primeiro produto: "))
+quantidade1 = int(input("Qual é a quantidade do primeiro produto: "))
+nome2 = input("Qual o nome do segundo produto?: ")
+preço2 = float(input("Qual o preço de cada unidade do segundo produto: "))
+quantidade2 = int(input("Qual é a quantidade do segundo produto: "))
+nome3 = input("Qual o nome do terceiro produto?: ")
+preço3 = float(input("Qual o preço de cada unidade do terceiro produto: "))
+quantidade3 = int(input("Qual é a quantidade do terceiro produto: "))
+total = preço1 * quantidade1 + preço2 * quantidade2 + preço3 * quantidade3
+print(f"Total R${total:,.2f}")
