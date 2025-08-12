@@ -1,12 +1,3 @@
-text1 = "O resultado é"
-num1 = 10
-num2 = 3.5
-num3 = num1 + num2
-print(text1)
-print(type(text1))
-print(num1)
-print(type(num1))
-print(num2)
-print(type(num2))
-print(num3)
-print(type(num3))
+idadeJ = int(input("Qual a idade de Juliana? "))
+idadeC = int(input("Qual a idade de Cris? "))
+print(idadeC > 17 or idadeJ > 17)
