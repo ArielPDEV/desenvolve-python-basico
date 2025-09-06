@@ -1,0 +1,10 @@
+import emoji
+print("Emojis disponíveis:")
+print(":smile: : 😄")
+print(":heart: : ❤️")
+print(":thumbs_up: : 👍")
+print(":fire: : 🔥")
+frase_codificada = input("Digite sua mensagem com códigos do emoji (ex: Olá :smile:!): ")
+frase_emojizada = emoji.emojize(frase_codificada, language='alias')
+print("Mensagem com emojis:")
+print(frase_emojizada)

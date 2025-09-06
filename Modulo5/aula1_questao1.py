@@ -1,0 +1,5 @@
+print("Quais os números a serem comparados? ")
+num1 = float(input())
+num2 = float(input())
+total = abs(num1 - num2)
+print(round(total, 2))
