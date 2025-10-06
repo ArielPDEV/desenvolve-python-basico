@@ -1,0 +1,10 @@
+computador
+janela
+cachorro
+teclado
+mochila
+planeta
+foguete
+bicicleta
+segredo
+aventura
