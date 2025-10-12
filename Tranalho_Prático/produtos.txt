@@ -1,0 +1,16 @@
+7891234567890 Arroz-Tipo-1 comida 25,90 50 ativo
+7899876543210 Feijão-Carioca comida 8,70 100 ativo
+7894567891234 Refrigerante-Cola bebida 7,50 120 esgotado
+7893216549870 Suco-De-Uva bebida 6,40 80 ativo
+7896549873210 Escova-De-Dente higiene 4,20 200 ativo
+7897418529630 Sabonete-Neutro higiene 2,90 150 inativo
+7898529637410 Balde-Plástico utensilios 12,00 35 ativo
+7899638527410 Peneira-Inox utensilios 9,80 20 ativo
+7891472583690 Filme-DVD-Infantil entretenimento 19,90 15 ativo
+7892583691470 Jogo-De-Cartas entretenimento 14,90 25 esgotado
+7893691472580 Detergente-Neutro limpeza 3,80 80 ativo
+7897418529631 Desinfetante-Pinho limpeza 5,60 60 inativo
+7898529637411 Caderno-Espiral papelaria 9,90 60 ativo
+7899638527411 Caneta-Azul papelaria 1,50 300 ativo
+7891472583691 Kit-Surpresa outros 29,90 10 inativo
+7892583691471 Caixa-Misteriosa outros 39,90 5 ativo
