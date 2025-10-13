@@ -6,7 +6,11 @@ criar_usr == ok
 sair == ok
 
 INTERFACE == incompleto
-inter_usr_1 == ok
+inter_usr_1.1 == ok
+inter_usr_1.2 == ok
+inter_usr_1.3 == ok
+inter_usr_1.4 == ok
+inter_usr_1.4.invalido == ok
 inter_usr_2 == ok
 inter_usr_3 == ok
 inter_usr_4 == ok
@@ -14,7 +18,11 @@ inter_usr_invalido == ok
 inter_ger_1.1 == ok
 inter_ger_1.2 == ok
 inter_ger_1.3 == ok
-inter_ger_1.4 == ok
+inter_ger_1.4.1 == ok
+inter_ger_1.4.2 == ok
+inter_ger_1.4.3 == ok
+inter_ger_1.4.4 == ok
+inter_ger_1.4.invalido == ok
 inter_ger_1.5 == ok
 inter_ger_1.invalido == ok
 inter_ger_2 == ok
@@ -29,13 +37,15 @@ inter_adm_1.2 == ok
 inter_adm_1.3 == ok
 inter_adm_1.4 == ok
 inter_adm_1.5 == ok
-inter_adm_1.invalido == ok
 inter_adm_2.1 == ok
 inter_adm_2.2 == ok
 inter_adm_2.3 == ok
-inter_adm_2.4 == ok
 inter_adm_2.5 == ok
-inter_adm_2.invalido == ok
+inter_adm_2.4.1 == ok
+inter_adm_2.4.2 == ok
+inter_adm_2.4.3 == ok
+inter_adm_2.4.4 == ok
+inter_adm_2.4.invalido == ok
 inter_adm_3 == ok
 inter_adm_4 == ok
 inter_adm_5.1 == ok
@@ -49,6 +59,10 @@ PERMISSÕES DE USUARIO
 
 ------ USUARIO -------
 op_1 == Vizualizar produtos/serviços
+        op_1.1 == Vizualizar produtos/serviços ordenador por nome
+        op_1.2 == Vizualizar produtos/serviços ordenados por preço
+        op_1.3 == Vizualizar produtos/serviços sem ordenação
+        op_1.4 == Sair
 op_2 == Vizualizar seus dados de usuario
 op_3 == Trocar senha
 op_4 == Sair
@@ -59,7 +73,11 @@ op_1 == Gerenciar produtos
         op_1.2 == Editar produto/serviço
         op_1.3 == Apagar produto/serviço
         op_1.4 == Vizualizar produtos/serviços
-        op_1.5 == Sair
+                  op_1.4.1 == Vizualizar produtos/serviços ordenador por nome
+                  op_1.4.2 == Vizualizar produtos/serviços ordenados por preço
+                  op_1.4.3 == Vizualizar produtos/serviços sem ordenação
+                  op_1.4.4 == Sair
+        op_1.6 == Sair
 op_2 == Vizualizar usuarios
 op_3 == Pesquisar
         op_3.1 == Pesquisar usuario
@@ -79,6 +97,10 @@ op_2 == Gerenciar produtos
         op_2.2 == Editar produto/serviço
         op_2.3 == Apagar produto/serviço
         op_2.4 == Vizualizar produtos/serviços
+                  op_2.4.1 == Vizualizar produtos/serviços ordenador por nome
+                  op_2.4.2 == Vizualizar produtos/serviços ordenados por preço
+                  op_2.4.3 == Vizualizar produtos/serviços sem ordenação
+                  op_2.4.4 == Sair
         op_2.5 == Sair
 op_3 == Vizualizar usuarios
 op_4 == Vizualizar produtos

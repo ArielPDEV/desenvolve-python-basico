@@ -14,3 +14,4 @@ admin-adm adm@gmail.com adm0 administrador
 João-Silva joao.silva1@email.com senha123 usuario
 João-Castro joao.castro99@email.com minhaSenha456 gerente
 Ariel-Vieira-Silva-Souza ariel@gmail.com ariel0 usuario
+Eduardo edufsouza@hotmail.com 123456 usuario

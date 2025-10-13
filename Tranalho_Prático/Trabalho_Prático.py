@@ -2,7 +2,7 @@ import sys
 
 login_status = 0
 arquivo = "usuarios.txt"
-arquivo_produto = "teste_produtos.txt"
+arquivo_produto = "produtos.txt"
 
 def ler_arquivo_usuarios(v=arquivo):
     linhas = []
@@ -14,19 +14,33 @@ def ler_arquivo_usuarios(v=arquivo):
     for nome, email, senha, nivelPerm in linhas:
         a[email] = {"nome":nome.replace('-',' '), "email":email, "senha":senha, "nivelPerm":nivelPerm}
     return a
-def ler_arquivo_produtos(v=arquivo_produto):
+def ler_arquivo_produtos(w=0, v=arquivo_produto):
     linhas = []
     a = {}
     with open(v, "r", encoding= "utf-8") as f:
         texto = f.readlines()
     for i in texto:
         linhas.append(i.strip().split(' '))
-    for id, nome, cat, preco, quant, status in linhas:
-        a[id] = {"id":id ,"nome":nome.replace('-',' '), "categoria":cat, "preço":preco, "quantidade":quant, "status":status}
+    if w == 0:
+        for id, nome, cat, preco, quant, status in linhas:
+            a[id] = {"id":id ,"nome":nome.replace('-',' '), "categoria":cat, "preço":preco, "quantidade":quant, "status":status}
+    elif w == 1:
+        for id, nome, cat, preco, quant, status in linhas:
+            a[id] = {"id":id ,"nome":nome.replace('-',' '), "categoria":cat, "preço":preco, "quantidade":quant, "status":status}
+        a = sorted(produtos.items(), key=lambda b: b[1]["nome"].lower())
+        for _, dados in a:
+            print(dados)
+    elif w == 2:
+        for id, nome, cat, preco, quant, status in linhas:
+            a[int(float(preco)*100)] = {"id":id ,"nome":nome.replace('-',' '), "categoria":cat, "preço":preco, "quantidade":quant, "status":status}
+    else:
+        print("erro: valor da ordenação invalido")
     return a
 
 users = ler_arquivo_usuarios()
 produtos = ler_arquivo_produtos()
+produtos_nome = sorted(produtos.items(), key=lambda item: item[1]["nome"].lower())
+produtos_preco = sorted(ler_arquivo_produtos(2))
 
 def pesquisar(x=produtos, y=users):
     while True:
@@ -145,9 +159,27 @@ def gerenciar_produtos(x=produtos, z=arquivo_produto):
 
 def vizualizar_produtos():
     global produtos
-    produtos = ler_arquivo_produtos()
-    for i in produtos:
-        print(produtos[i])
+    global produtos_nome
+    global produtos_preco
+    while True:
+        print("Ordenar por:\n\n Opção 1: Nome\n Opção 2: Preço\n Opção 3: Sem ordenação\n Opção 4: Voltar")
+        y = input("\n Qual opção você deseja acessar?\n\n")
+        if y == '1':
+            produtos_nome = sorted(produtos.items(), key=lambda item: item[1]["nome"].lower())
+            for _, dados in produtos_nome:
+                print(dados)
+        elif y == '2':
+            produtos_preco = ler_arquivo_produtos(2)
+            for i in sorted(produtos_preco):
+                print(produtos_preco[i])
+        elif y == '3':
+            produtos = ler_arquivo_produtos()
+            for i in produtos:
+                print(produtos[i])
+        elif y == '4':
+            break
+        else:
+            print("\n\nOpção invalida")
 
 def vizualizar_usuarios():
     global users
